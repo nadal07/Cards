@@ -4,8 +4,11 @@ import "fmt"
 
 func main() {
 
-	//var card string = "Ace of Spades"
-	card := "Ace of Spades"   // := is used for intilization
-	card = "Five of Diamonds" // = assigning
+	card := newCard() // := is used for intilization
+
 	fmt.Println(card)
+}
+
+func newCard() string {
+	return "Five of Diamonds"
 }
